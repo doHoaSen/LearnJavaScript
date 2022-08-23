@@ -192,4 +192,21 @@ function calculate(command, a, b){
     return result;
 }
 
+//or
+function calculate2(command, a, b){
+    switch (command){
+        case 'add':
+            return a+b;
+        case 'substract':
+            return a-b;
+        case 'multiply':
+            return a*b;
+        case 'divide':
+            return a/b;
+        case 'remainder':
+            return a%b;
+        default:
+            throw Error('unknown command');
+    }
+}
 console.log(calculate('add', 4, 6));
