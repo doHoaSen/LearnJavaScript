@@ -169,3 +169,27 @@ const add = (a, b) => a + b;
 (function hello(){
     console.log('IIFE');
 })();
+
+
+//Quiz
+// 01. Function calculate(command, a, b)
+// command: add, substract, divide, remainder
+function calculate(command, a, b){
+    let result = 0;
+    if (command === 'add'){
+        result = a + b;
+    } else if (command === 'substract'){
+        result = a - b;
+    } else if (command === 'multiply'){
+        result = a * b;
+    } else if (command === 'divide'){
+        result = a / b;
+    } else if (command === 'remainder'){
+        result = a % b;
+    } else{
+        console.log('You made an error');
+    }
+    return result;
+}
+
+console.log(calculate('add', 4, 6));
