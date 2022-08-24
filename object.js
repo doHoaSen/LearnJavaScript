@@ -74,7 +74,7 @@ for (key in ellie){
 // for (value of iterable)
 const array = [1, 2, 4, 5];
 for (value of array){
-    console.log(value);2
+    console.log(value);
 }
 
 
